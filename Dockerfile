@@ -1,7 +1,7 @@
-FROM hashicorp/terraform:light
+FROM hashicorp/terraform:0.11.14
 MAINTAINER Jesse DeFer <terragrunt@dotd.com>
 
-ENV TERRAGRUNT_VERSION=0.18.4
+ENV TERRAGRUNT_VERSION=0.18.6
 ENV TERRAGRUNT_TFPATH=/bin/terraform
 
 RUN curl -sL https://github.com/gruntwork-io/terragrunt/releases/download/v$TERRAGRUNT_VERSION/terragrunt_linux_amd64 -o /bin/terragrunt && chmod +x /bin/terragrunt
