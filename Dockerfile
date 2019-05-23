@@ -1,4 +1,4 @@
-FROM hashicorp/terraform:0.11.14
+FROM hashicorp/terraform:light
 MAINTAINER Jesse DeFer <terragrunt@dotd.com>
 
 ENV TERRAGRUNT_VERSION=0.18.6
