@@ -1,7 +1,7 @@
 FROM hashicorp/terraform:light
 MAINTAINER Jesse DeFer <terragrunt@dotd.com>
 
-ENV TERRAGRUNT_VERSION=0.18.6
+ENV TERRAGRUNT_VERSION=0.19.21
 ENV TERRAGRUNT_TFPATH=/bin/terraform
 
 ENV SCENERY_VERSION=0.1.5
