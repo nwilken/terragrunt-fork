@@ -16,6 +16,7 @@ RUN mkdir -p /home/jenkins/.ssh && chmod 0700 /home/jenkins/.ssh && echo -e "Hos
 
 RUN apk del curl
 
+COPY tflint.hcl /etc
 COPY docker-entrypoint.sh /
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
