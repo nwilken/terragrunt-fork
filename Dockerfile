@@ -1,8 +1,9 @@
 FROM hashicorp/terraform:light
 MAINTAINER Jesse DeFer <terragrunt@dotd.com>
 
-ENV TERRAGRUNT_VERSION=0.19.21
+ENV TERRAGRUNT_VERSION=0.19.23
 ENV TFLINT_VERSION=0.10.3
+ENV TF_IN_AUTOMATION true
 
 RUN apk add --no-cache --update git openssh-client curl
 RUN adduser -D -u 1000 jenkins
