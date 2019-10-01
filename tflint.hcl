@@ -5,7 +5,7 @@ config {
 }
 
 rule "terraform_dash_in_resource_name" {
-  enabled = true
+  enabled = false
 }
 
 rule "terraform_documented_outputs" {
