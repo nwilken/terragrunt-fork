@@ -18,8 +18,6 @@ RUN curl -sL https://github.com/liamg/tfsec/releases/download/v$TFSEC_VERSION/tf
 
 RUN mkdir -p /home/jenkins/.ssh && chmod 0700 /home/jenkins/.ssh && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> /home/jenkins/.ssh/config && chmod 0600 /home/jenkins/.ssh/config && chown -R jenkins:jenkins /home/jenkins/.ssh
 
-RUN apk del curl
-
 COPY tflint.hcl /etc
 COPY docker-entrypoint.sh /
 
